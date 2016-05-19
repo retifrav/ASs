@@ -1,8 +1,6 @@
 # Apple Scripts
 
-My *A*pple *S*cript*s* collection.
-
-## Scripts
+My **A**pple **S**cript**s** collection.
 
 ### Mail message count
 
