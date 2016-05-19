@@ -1,6 +1,6 @@
 # My AppleScript collection
 
-### Mail message count
+### message-count
 
 ![AppleScript message count](/img/message-count.png?raw=true "AppleScript message count")
 
