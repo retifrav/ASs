@@ -1,5 +1,8 @@
 # My AppleScript collection
 
+- [mail-message-count](#mail-message-count)
+- [ping-and-reconnect](#ping-and-reconnect)
+
 ### mail-message-count
 
 ![AppleScript mail message count](/img/mail-message-count.png?raw=true "AppleScript mail message count")
