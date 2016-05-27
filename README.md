@@ -2,6 +2,7 @@
 
 - [mail-message-count](#mail-message-count)
 - [ping-and-reconnect](#ping-and-reconnect)
+- [write2log](#write2log)
 
 ### mail-message-count
 
