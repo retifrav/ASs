@@ -15,4 +15,4 @@ This one pings some website URL to check internet connection, and if ping fails,
 
 ### write2log
 
-Shared-ish script with logging function to call from other scripts. It logs strings in the specified text file.
+Shared-ish script with logging function to call from other scripts. It logs strings to the specified text file.
