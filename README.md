@@ -12,3 +12,7 @@ The script shows message count for each mailbox in all accounts. The information
 ### ping-and-reconnect
 
 This one pings some website URL to check internet connection, and if ping fails, then script restarts the network interface (turns off and on again). It helps when you are connected via WiFi and suddenly everything loses connection.
+
+### write2log
+
+Shared-ish script with logging function to call from other scripts. It logs strings in the specified text file.

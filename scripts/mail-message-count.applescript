@@ -1,10 +1,3 @@
-(*
-
-    The script shows [unread] message count for each mailbox in all accounts. The information is displayed in the log.
-
- *)
-
-# working with Mail.app
 tell application "Mail"
     
     set everyAccount to every account
