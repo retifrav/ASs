@@ -26,4 +26,4 @@ Plays a sound file with `afplay`. Can be used to play notifications when finishi
 
 ### process-files-with-ffmpeg
 
-Gets a list of files as an input and iterates through them processing each one with FFmpeg. Here's [an article](https://retifrav.github.io/blog/2016/08/25/macos-automator-ffmgeg-files/) about creating a Service based on that.
+Gets a list of files and iterates through them, processing each with FFmpeg. Here's [an article](https://retifrav.github.io/blog/2016/08/25/macos-automator-ffmgeg-files/) about creating a Service based on that.
