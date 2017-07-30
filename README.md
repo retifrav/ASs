@@ -5,8 +5,10 @@
 - [ping-and-reconnect](#ping-and-reconnect)
 - [play-sound](#play-sound)
 - [process-files-with-ffmpeg](#process-files-with-ffmpeg)
-- [get-extension](#get-extension)
-- [get-path-without-extension](#get-path-without-extension)
+- [Files and folders](#files-and-folders)
+    - [get-extension](#get-extension)
+    - [get-path-without-extension](#get-path-without-extension)
+    - [get-folder-name](#get-folder-name)
 
 ### write-to-log
 
@@ -30,6 +32,8 @@ Plays a sound file with `afplay`. Can be used to play notifications when finishi
 
 Gets a list of files and iterates through them, processing each with FFmpeg. Here's [an article](https://retifrav.github.io/blog/2016/08/25/macos-automator-ffmgeg-files/) about creating a Service based on that.
 
+### Files and folders
+
 ### get-extension
 
 Given the filename `/Users/yourname/temp/log.txt` returns `txt`.
@@ -37,3 +41,7 @@ Given the filename `/Users/yourname/temp/log.txt` returns `txt`.
 ### get-path-without-extension
 
 Given the filename `/Users/yourname/temp/log.txt` returns `/Users/yourname/temp/log`.
+
+#### get-folder-name
+
+Given the path `/Users/yourname/temp/` returns `temp`.
