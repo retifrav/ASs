@@ -34,14 +34,14 @@ Gets a list of files and iterates through them, processing each with FFmpeg. Her
 
 ### Files and folders
 
-### get-extension
+#### get-extension
 
 Given the filename `/Users/yourname/temp/log.txt` returns `txt`.
 
-### get-path-without-extension
+#### get-path-without-extension
 
 Given the filename `/Users/yourname/temp/log.txt` returns `/Users/yourname/temp/log`.
 
-#### get-folder-name
+##### get-folder-name
 
 Given the path `/Users/yourname/temp/` returns `temp`.
