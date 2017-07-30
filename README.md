@@ -42,6 +42,6 @@ Given the filename `/Users/yourname/temp/log.txt` returns `txt`.
 
 Given the filename `/Users/yourname/temp/log.txt` returns `/Users/yourname/temp/log`.
 
-##### get-folder-name
+#### get-folder-name
 
 Given the path `/Users/yourname/temp/` returns `temp`.
