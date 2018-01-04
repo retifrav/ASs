@@ -1,6 +1,6 @@
 # My AppleScript collection
 
-- [write-to-log](#write2log)
+- [write-to-log](#write-to-log)
 - [mail-message-count](#mail-message-count)
 - [ping-and-reconnect](#ping-and-reconnect)
 - [play-sound](#play-sound)
