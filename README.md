@@ -14,6 +14,7 @@ My **A**pple**S**cript**s** collection
     - [get-path-without-extension](#get-path-without-extension)
     - [get-folder-name](#get-folder-name)
 - [list-menu-bar-items](#list-menu-bar-items)
+- [toggle-bluetooth-state-via-menu-bar-icon](#toggle-bluetooth-state-via-menu-bar-icon)
 
 <!-- /MarkdownTOC -->
 
@@ -67,4 +68,15 @@ Available menu bar items
 - Battery
 - Bluetooth
 - Shortcuts
+```
+
+### toggle-bluetooth-state-via-menu-bar-icon
+
+Toggles Bluetooth state via Menu Bar icon (*requires user to add Bluetooth icon on Menu Bar via Control Centre Modules in System Settings*):
+
+``` sh
+$ sw_vers -productVersion
+13.5.2
+
+$ osascript ./toggle-bluetooth-state-via-menu-bar-icon.applescript 1
 ```
