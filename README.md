@@ -1,4 +1,8 @@
-# My AppleScript collection
+# AppleScripts
+
+My **A**pple**S**cript**s** collection
+
+<!-- MarkdownTOC -->
 
 - [write-to-log](#write-to-log)
 - [mail-message-count](#mail-message-count)
@@ -9,6 +13,9 @@
     - [get-extension](#get-extension)
     - [get-path-without-extension](#get-path-without-extension)
     - [get-folder-name](#get-folder-name)
+- [list-menu-bar-items](#list-menu-bar-items)
+
+<!-- /MarkdownTOC -->
 
 ### write-to-log
 
@@ -45,3 +52,19 @@ Given the filename `/Users/yourname/temp/log.txt` returns `/Users/yourname/temp/
 #### get-folder-name
 
 Given the path `/Users/yourname/temp/` returns `temp`.
+
+### list-menu-bar-items
+
+``` sh
+$ sw_vers -productVersion
+13.5.2
+
+$ osascript ./list-menu-bar-items.applescript
+Available menu bar items
+- Clock
+- Control Centre
+- Wi‑Fi, connected, 3 bars
+- Battery
+- Bluetooth
+- Shortcuts
+```
