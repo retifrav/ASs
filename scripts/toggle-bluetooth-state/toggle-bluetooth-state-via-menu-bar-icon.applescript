@@ -56,6 +56,8 @@ on toggleBluetooth(turnOn)
                     log "The Bluetooth state is already " & bluetoothState
                 end if
             end tell
+
+            key code 53 -- ESC
         end tell
     end tell
 end toggleBluetooth

@@ -16,8 +16,9 @@ My **A**pple**S**cript**s** collection
 - [listing-window-items](#listing-window-items)
     - [list-menu-bar-items](#list-menu-bar-items)
     - [try-to-list-window-items-properties](#try-to-list-window-items-properties)
-- [Toggle Bluetooth state](#toggle-bluetooth-state)
+- [toggle-bluetooth-state](#toggle-bluetooth-state)
     - [toggle-bluetooth-state-via-menu-bar-icon](#toggle-bluetooth-state-via-menu-bar-icon)
+    - [toggle-bluetooth-state-via-control-centre](#toggle-bluetooth-state-via-control-centre)
 
 <!-- /MarkdownTOC -->
 
@@ -97,7 +98,7 @@ item 1 of checkbox 2 of group 1 of window Control Centre of application process 
 
 Might fail in different scenarios because of the wrong index, or inability to get "every item", or else
 
-### Toggle Bluetooth state
+### toggle-bluetooth-state
 
 #### toggle-bluetooth-state-via-menu-bar-icon
 
@@ -108,4 +109,15 @@ $ sw_vers -productVersion
 13.5.2
 
 $ osascript ./toggle-bluetooth-state-via-menu-bar-icon.applescript 1
+```
+
+#### toggle-bluetooth-state-via-control-centre
+
+Toggles Bluetooth state via Control Centre:
+
+``` sh
+$ sw_vers -productVersion
+13.5.2
+
+$ osascript ./toggle-bluetooth-state-via-control-centre.applescript 1
 ```
