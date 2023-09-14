@@ -13,10 +13,11 @@ My **A**pple**S**cript**s** collection
     - [get-extension](#get-extension)
     - [get-path-without-extension](#get-path-without-extension)
     - [get-folder-name](#get-folder-name)
-- [Listing GUI controls](#listing-gui-controls)
+- [listing-window-items](#listing-window-items)
     - [list-menu-bar-items](#list-menu-bar-items)
     - [try-to-list-window-items-properties](#try-to-list-window-items-properties)
-- [toggle-bluetooth-state-via-menu-bar-icon](#toggle-bluetooth-state-via-menu-bar-icon)
+- [Toggle Bluetooth state](#toggle-bluetooth-state)
+    - [toggle-bluetooth-state-via-menu-bar-icon](#toggle-bluetooth-state-via-menu-bar-icon)
 
 <!-- /MarkdownTOC -->
 
@@ -56,7 +57,7 @@ Given the filename `/Users/yourname/temp/log.txt` returns `/Users/yourname/temp/
 
 Given the path `/Users/yourname/temp/` returns `temp`.
 
-### Listing GUI controls
+### listing-window-items
 
 #### list-menu-bar-items
 
@@ -96,7 +97,9 @@ item 1 of checkbox 2 of group 1 of window Control Centre of application process 
 
 Might fail in different scenarios because of the wrong index, or inability to get "every item", or else
 
-### toggle-bluetooth-state-via-menu-bar-icon
+### Toggle Bluetooth state
+
+#### toggle-bluetooth-state-via-menu-bar-icon
 
 Toggles Bluetooth state via Menu Bar icon (*requires user to add Bluetooth icon on Menu Bar via Control Centre Modules in System Settings*):
 
