@@ -13,7 +13,9 @@ My **A**pple**S**cript**s** collection
     - [get-extension](#get-extension)
     - [get-path-without-extension](#get-path-without-extension)
     - [get-folder-name](#get-folder-name)
-- [list-menu-bar-items](#list-menu-bar-items)
+- [Listing GUI controls](#listing-gui-controls)
+    - [list-menu-bar-items](#list-menu-bar-items)
+    - [try-to-list-window-items-properties](#try-to-list-window-items-properties)
 - [toggle-bluetooth-state-via-menu-bar-icon](#toggle-bluetooth-state-via-menu-bar-icon)
 
 <!-- /MarkdownTOC -->
@@ -54,7 +56,9 @@ Given the filename `/Users/yourname/temp/log.txt` returns `/Users/yourname/temp/
 
 Given the path `/Users/yourname/temp/` returns `temp`.
 
-### list-menu-bar-items
+### Listing GUI controls
+
+#### list-menu-bar-items
 
 ``` sh
 $ sw_vers -productVersion
@@ -69,6 +73,28 @@ Available menu bar items
 - Bluetooth
 - Shortcuts
 ```
+
+#### try-to-list-window-items-properties
+
+``` sh
+$ sw_vers -productVersion
+13.5.2
+
+$ osascript ./try-to-list-window-items-properties.applescript
+toggle button
+missing value
+class:checkbox, minimum value:missing value, orientation:missing value, position:1386, 46, accessibility description:missing value, role description:toggle button, focused:missing value, title:missing value, size:134, 41, help:missing value, entire contents:, enabled:true, maximum value:missing value, role:AXCheckBox, value:1, subrole:AXToggle, selected:missing value, name:missing value, description:toggle button
+item 1 of checkbox 1 of group 1 of window Control Centre of application process ControlCenter
+-
+toggle button
+missing value
+class:checkbox, minimum value:missing value, orientation:missing value, position:1530, 40, accessibility description:missing value, role description:toggle button, focused:missing value, title:missing value, size:134, 62, help:missing value, entire contents:, enabled:true, maximum value:missing value, role:AXCheckBox, value:0, subrole:AXToggle, selected:missing value, name:missing value, description:toggle button
+item 1 of checkbox 2 of group 1 of window Control Centre of application process ControlCenter
+-
+...
+```
+
+Might fail in different scenarios because of the wrong index, or inability to get "every item", or else
 
 ### toggle-bluetooth-state-via-menu-bar-icon
 

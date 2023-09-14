@@ -7,5 +7,4 @@ tell application "System Events"
             log "- " & (get description of mbi)
         end repeat
     end tell
-    return
 end tell
