@@ -19,7 +19,7 @@ on run argv
 
     toggleBluetooth(turnOn)
 
-    return
+    return -- otherwise it will also print the last command
 end run
 
 on toggleBluetooth(turnOn)
@@ -39,7 +39,6 @@ on toggleBluetooth(turnOn)
                 click mbiControlCentre
             else
                 error "Couldn't find Control Centre on Menu Bar"
-                return
             end if
 
             # no IDs or labels, have to rely on ordinals

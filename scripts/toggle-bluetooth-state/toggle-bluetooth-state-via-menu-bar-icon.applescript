@@ -19,7 +19,7 @@ on run argv
 
     toggleBluetooth(turnOn)
 
-    return
+    return -- otherwise it will also print the last command
 end run
 
 on toggleBluetooth(turnOn)
@@ -40,7 +40,6 @@ on toggleBluetooth(turnOn)
                 click mbiBluetooth
             else
                 error "There is no Bluetooth icon on Menu Bar, you need to add it there first"
-                return
             end if
 
             # no IDs or labels, have to rely on ordinals

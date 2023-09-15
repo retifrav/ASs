@@ -19,6 +19,7 @@ My **A**pple**S**cript**s** collection
 - [toggle-bluetooth-state](#toggle-bluetooth-state)
     - [toggle-bluetooth-state-via-menu-bar-icon](#toggle-bluetooth-state-via-menu-bar-icon)
     - [toggle-bluetooth-state-via-control-centre](#toggle-bluetooth-state-via-control-centre)
+- [toggle-airdrop-discoverability](#toggle-airdrop-discoverability)
 
 <!-- /MarkdownTOC -->
 
@@ -120,4 +121,12 @@ $ sw_vers -productVersion
 13.5.2
 
 $ osascript ./toggle-bluetooth-state-via-control-centre.applescript 1
+```
+
+### toggle-airdrop-discoverability
+
+Toggles AirDrop discoverability between `No One` (`1`), `Contacts Only` (`2`) and `Everyone` (`3`). Optionally toggles off Bluetooth too:
+
+``` sh
+$ TOGGLE_OFF_BLUETOOTH=1 osascript ./toggle-airdrop-discoverability.applescript 2
 ```
